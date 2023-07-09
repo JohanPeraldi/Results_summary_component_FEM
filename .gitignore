@@ -18,14 +18,11 @@
 .prettierignore
 .prettierrc.json
 
-# Ignore the node_modules folder
-node_modules/
-
-# Ignore the design folder
+# Ignore specific folders
+.parcel-cache/
 design/
-
-# Ignore the .husky folder
-.husky/
+dist/
+node_modules/
 
 # Ignore the documentation files
 style-guide.md
