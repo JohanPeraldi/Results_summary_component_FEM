@@ -13,4 +13,20 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+
+# Ignore prettier config files
 .prettierignore
+.prettierrc.json
+
+# Ignore the node_modules folder
+node_modules/
+
+# Ignore the design folder
+design/
+
+# Ignore the .husky folder
+.husky/
+
+# Ignore the documentation files
+style-guide.md
+README-template.md
