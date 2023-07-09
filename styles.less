@@ -64,9 +64,11 @@
 
 // Widths
 @article-width: 360px;
+@article-width-mobile: 100%;
 
 // Padding
 @article-padding: 40px;
+@article-padding-mobile: 30px;
 
 *,
 *::before,
@@ -269,5 +271,39 @@ body {
 
   a {
     color: @link-color;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .article-wrapper {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .result {
+    border-radius: 0 0 @border-radius @border-radius;
+    width: @article-width-mobile;
+
+    &__text {
+      padding: 0 5px;
+    }
+  }
+
+  .summary {
+    width: @article-width-mobile;
+    padding: @article-padding-mobile;
+
+    &__title {
+      margin-bottom: @article-padding-mobile;
+    }
+
+    &__items {
+      margin-bottom: @article-padding-mobile;
+    }
+  }
+
+  .attribution {
+    margin-bottom: 20px;
   }
 }
